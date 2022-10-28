@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Открывается окно </title>
+
+</head>
+<body>
+<h3>Откройте окно</h3>
+<button onclick="func()">Открыть окно</button>
+<script type="text/javascript">alert ('Задание: ОТКРЫТЬ ОКНО');
+var windowopen;
+function func() {
+
+windowopen = window.open("","","width=250,height=250");
+setTimeout(func1,10000);
+}
+function func1() {
+windowopen.close();
+}
+
+</script>
+</body>
+</html>
